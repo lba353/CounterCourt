@@ -12,7 +12,7 @@
         jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.2"
-        sha1="07d2a4f8414b99b6525d6b9d9a2a48e19532b4a7">
+        sha1="5df1b1c74e908e033378f12a333cc779de2df6c3">
         <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f9fc19a9e12c4dedcabeb172277b505c558a5cb0\classes.dex" />
     </item>
     <item
@@ -37,6 +37,13 @@
         <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_2a92859c036589d9cbf6c9cb718fbdd49ca2f5a1\classes.dex" />
     </item>
     <item
+        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6b04558fea54df6cfd6050ac00a34fcad370ed19">
+        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f5970d7070b93c51f0cb43f528373cddce8145f6\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.2"
@@ -49,13 +56,6 @@
         revision="24.0.2"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_d3967e89026b6ae675a45188e427586b47b74bbc\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="4aec47b88b7b6af5a711ce27783fd162102f52fe">
-        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f5970d7070b93c51f0cb43f528373cddce8145f6\classes.dex" />
     </item>
 
 </items>
