@@ -51,6 +51,12 @@
                 android:layout_height="wrap_content"
                 android:text="+1 Point"
                 android:onClick="click1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-1 Point"
+                android:onClick="click2" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,6 +99,12 @@
                 android:layout_height="wrap_content"
                 android:text="+1 Point"
                 android:onClick="touch1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-1 Point"
+                android:onClick="touch2" />
         </LinearLayout>
 
     </LinearLayout>

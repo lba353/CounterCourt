@@ -1,6 +1,7 @@
 package com.example.student.courtcounter;
 
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     private int s = 0;
     private int g = 0;
     private AlertDialog gameOver;
+    private MediaPlayer soundFX1;
+    private MediaPlayer soundFX2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +30,37 @@ public class MainActivity extends AppCompatActivity {
         goal.setText(String.valueOf(g));
 
         gameOver = new AlertDialog.Builder(MainActivity.this).create();
+
+        soundFX1 = MediaPlayer.create(this, R.raw.pling);
+        soundFX2 = MediaPlayer.create(this, R.raw.blop);
     }
 
     public void click1(View view) {
         s++;
         score.setText(String.valueOf(s));
+
+        soundFX1.start();
+    }
+
+    public void click2(View view) {
+        s--;
+        score.setText(String.valueOf(s));
+
+        soundFX2.start();
     }
 
     public void touch1(View view) {
         g++;
         goal.setText(String.valueOf(g));
+
+        soundFX1.start();
+    }
+
+    public void touch2(View view) {
+        g--;
+        goal.setText(String.valueOf(g));
+
+        soundFX2.start();
     }
 
     public void reset(View view){
