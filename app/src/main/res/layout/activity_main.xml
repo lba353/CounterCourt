@@ -16,13 +16,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
-            <TextView
+            <EditText
+                android:id="@+id/teamRed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:textSize="36sp"
-                android:text="Team Red"
                 android:gravity="center"
+                android:hint="Team 1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
                 android:background="#C62828"
                 android:textColor="#FFFFFF" />
 
@@ -64,13 +67,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
-            <TextView
+            <EditText
+                android:id="@+id/teamBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:textSize="36sp"
-                android:text="Team Blue"
                 android:gravity="center"
+                android:hint="Team 2"
+                android:imeOptions="actionDone"
+                android:inputType="text"
                 android:background="#1565C0"
                 android:textColor="#FFFFFF" />
 

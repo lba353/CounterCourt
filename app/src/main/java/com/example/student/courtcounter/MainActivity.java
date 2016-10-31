@@ -6,15 +6,25 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView score;
     private TextView goal;
+
+    private EditText red;
+    private EditText blue;
+
+    private String redName;
+    private String blueName;
+
     private int s = 0;
     private int g = 0;
+
     private AlertDialog gameOver;
+
     private MediaPlayer soundFX1;
     private MediaPlayer soundFX2;
     private MediaPlayer soundFX3;
@@ -29,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
         goal = (TextView)findViewById(R.id.goals);
         goal.setText(String.valueOf(g));
+
+        red = (EditText)findViewById(R.id.teamRed);
+
+        blue = (EditText)findViewById(R.id.teamBlue);
 
         gameOver = new AlertDialog.Builder(MainActivity.this).create();
 
@@ -80,11 +94,13 @@ public class MainActivity extends AppCompatActivity {
     public void alert() {
         //Lines 54-64 are if statements that state who won the game and show the message in the alert box.
         if(s > g) {
-            gameOver.setMessage("Team Red has won the game!");
+            redName = red.getText().toString();
+            gameOver.setMessage(redName + " has won the game!");
         }
 
         if(s < g) {
-            gameOver.setMessage("Team Blue has won the game!");
+            blueName = blue.getText().toString();
+            gameOver.setMessage(blueName + " has won the game!");
         }
 
         if(s == g) {
