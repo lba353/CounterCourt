@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private AlertDialog gameOver;
     private MediaPlayer soundFX1;
     private MediaPlayer soundFX2;
+    private MediaPlayer soundFX3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         gameOver = new AlertDialog.Builder(MainActivity.this).create();
 
-        soundFX1 = MediaPlayer.create(this, R.raw.pling);
-        soundFX2 = MediaPlayer.create(this, R.raw.blop);
+        soundFX1 = MediaPlayer.create(this, R.raw.up);
+        soundFX2 = MediaPlayer.create(this, R.raw.down);
+        soundFX3 = MediaPlayer.create(this, R.raw.reset);
     }
 
     public void click1(View view) {
@@ -64,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void reset(View view){
+        soundFX3.start();
+
         alert();
 
         g = 0;
